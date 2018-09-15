@@ -8,8 +8,8 @@ import com.nc.cms.domain.UserInfoBean;
 @MapperScan
 public interface UserInfoMapper {
 
-	public UserInfoBean getUserInfo(@Param("id") String id);
+//	public UserInfoBean getUserInfo(@Param("id") String id);
 	
-	public int userCount();
+	//public int userCount();
 	
 }

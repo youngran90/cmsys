@@ -1,7 +1,10 @@
 package com.nc.cms.domain;
 
+import org.apache.ibatis.type.Alias;
+
 //mapper resultType type name
 
+@Alias("home")
 public class homeBean {
 	
 	private String id;

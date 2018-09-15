@@ -3,7 +3,10 @@ package com.nc.cms.domain;
 import java.sql.Date;
 
 import org.apache.ibatis.type.Alias;
+import org.springframework.stereotype.Repository;
 
+@Alias("userInfo")
+@Repository
 public class UserInfoBean {
 	
 	private String id;

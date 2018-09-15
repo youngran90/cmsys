@@ -16,17 +16,12 @@ public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
-	@Autowired
-	private SqlSession sqlSession;
-	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		
-		//int resultList = (Integer)sqlSession.selectOne("com.nc.cms.dao.UserDao.getUserInfo");
-
-		//System.out.println("resulet  ::: " + resultList);
+		model.addAttribute("serverTime", "1234");
 		
-		return "login";
+		return "/user/login";
 	}
 	
 }
